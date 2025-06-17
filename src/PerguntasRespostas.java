@@ -2,13 +2,13 @@ import java.util.ArrayList;
 
 public class PerguntasRespostas {
     private String pergunta;
-    ArrayList <String> listaDePerguntas = new ArrayList<>();
+    private ArrayList<String> listaDeAlternativas;
     private String alternativaCorreta;
 
-    public PerguntasRespostas(String pergunta, ArrayList<String> listaDePerguntas, String alternativaCorreta){
-        this.alternativaCorreta=alternativaCorreta;
+    public PerguntasRespostas(String pergunta, ArrayList<String> listaDeAlternativas, String alternativaCorreta) {
         this.pergunta = pergunta;
-        this.listaDePerguntas = listaDePerguntas;
+        this.listaDeAlternativas = listaDeAlternativas;
+        this.alternativaCorreta = alternativaCorreta;
     }
 
     public String getPergunta() {
@@ -19,11 +19,19 @@ public class PerguntasRespostas {
         this.pergunta = pergunta;
     }
 
-    public ArrayList<String> getListaDePerguntas() {
-        return listaDePerguntas;
+    public ArrayList<String> getListaDeAlternativas() {
+        return listaDeAlternativas;
+    }
+
+    public void setListaDeAlternativas(ArrayList<String> listaDeAlternativas) {
+        this.listaDeAlternativas = listaDeAlternativas;
     }
 
     public String getAlternativaCorreta() {
         return alternativaCorreta;
     }
+
+    public void setAlternativaCorreta(String alternativaCorreta) {
+        this.alternativaCorreta = alternativaCorreta;
     }
+}

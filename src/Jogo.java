@@ -6,7 +6,6 @@ public abstract class Jogo {
     Jogador jogador;
     List<PerguntasRespostas> perguntasUsadas = new ArrayList<>();
 
-    public abstract void iniciarJogo();
-    public abstract void fimDeJogo();
+    public abstract void jogar();
     public abstract void resultado();
 }

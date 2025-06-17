@@ -18,7 +18,7 @@ public class Jogador {
         return premio;
     }
 
-    //public double pontuar(){
+    public double pontuar(){
 
-    //}
+    }
 }
