@@ -34,7 +34,7 @@ public class Milhao extends Jogo {
             scanner.nextLine(); // consumir quebra de linha
             if (respostaEscolhida.equals(p.getAlternativaCorreta())) {
                 System.out.println("Resposta correta!");
-                jogador.pontuar();
+                jogador.pontuar(i+1);
                 System.out.println("Prêmio atual: " + jogador.getPremio());
             } else {
                 System.out.println("Resposta incorreta.");
